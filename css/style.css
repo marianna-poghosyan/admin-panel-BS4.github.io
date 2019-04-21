@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, "Times New Roman", Times, serif;
+}
+a {
+    color: #1CACF6;
+}
+.bg-primary {
+    background-color: #334352!important;
+}
+.nav-tabs{
+    background-color: #f6f6f6;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent !important;
+    padding: 0.9375rem 1rem;
+}
+.nav-item {
+    font-weight: bold;
+}
+.darkIcon {
+    display: none;
+}
+.active .darkIcon {
+    display: initial;
+}
+.active .lightIcon {
+    display: none;
+}
+.search-group {
+    background-color: white;
+    margin-top: 9px;
+}
+.active h4 {
+    border-bottom: 2px solid #f6f6f6;
+}
+.active h4 span {
+    border-bottom: 2px solid #ff005a;
+    margin-bottom: -2px;
+    display: inline-block;
+}
+.table thead th {
+    border: 0 solid transparent;
+}
+.table thead {
+    background-color: #f6f6f6;
+}
+.table tbody td, .table tbody th {
+    border-top: 1px solid #f6f6f6;
+}
+.officers tbody .btn-link, .supervisees tbody .btn-link, .messages tbody .btn-link, .information tbody .btn-link, .appointment tbody .btn-link {
+    padding: 0;
+    color: #bababa;
+}
+.officers tbody .btn-link:hover, .supervisees tbody .btn-link:hover, .messages tbody .btn-link:hover, .information tbody .btn-link:hover, .appointment tbody .btn-link:hover {
+    color: #1CACF6;
+}
+.modal-submit{
+    background-color: #1CACF6;
+    border-color: #1CACF6;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+.custom-select, .custom-select:active {
+    background: #fff url('../icon/drop down icon.png') no-repeat right .75rem center;
+    border-color: transparent;
+    color: #b5b5b5;
+}
+.input-group-prepend, .note {
+    color: #1CACF6;
+}
+.note {
+    margin-right: 40px;
+}
+.tab-container {
+    width: 60%;
+    margin: 0 auto;
+}
+.download-button .btn-link {
+    padding: 0;
+}
+.btn-custom-long {
+    margin-bottom: 0;
+    padding: .375rem 2.75rem;
+}
+.btn-file-choose {
+    color: #1CACF6;
+    border-color: #b5b5b5;
+}
+.btn-custom-blue {
+    color: #fff;
+    border-color: #1CACF6;
+    background-color: #1CACF6;
+}
+.upload-file-info {
+    border-bottom: 1px solid #b5b5b5;
+    display: inline-block;
+    margin-left: 15px;
+    width: calc(100% - 186px);
+    width: -webkit-calc(100% - 186px);
+    line-height: 38px;
+    color: #b5b5b5;
+}
+.checkbox {
+    cursor: pointer;
+}
+.checked {
+    display: none;
+}
+.selected .not-checked {
+    display: none;
+}
+.selected .checked {
+    display: initial;
+}
+.mail-text {
+    display: inline-block;
+    margin-bottom: 70px;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.pointer {
+    cursor: pointer;
+}
+.dropdown-toggle:after {
+    content:url('../icon/drop down icon.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0;
+    color: #b5b5b5;
+}
+.dropdown-custom {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+    box-shadow: 2px 3px 0 #d1d1d1;
+    width: 90px;
+    background-color: #fff;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+}
+.small-custom {
+    font-size: 9px;
+    font-weight: 400;
+}
+.table tr td, .table tr th {
+    vertical-align: middle;
+}
+.information td, .information th {
+    padding: .5rem;
+}
+.result td, .result th {
+    padding: .3rem;
+}
+#editSuperviseeModal .modal-header, #blockModal .modal-header {
+    border-bottom: 0px solid transparent;
+}
+#editSuperviseeModal .modal-footer, #blockModal .modal-footer {
+    border-top: 0px solid transparent;
+}
+#editSuperviseeModal .modal-dialog{
+    overflow-y: initial !important
+}
+#editSuperviseeModal .modal-body{
+    max-height: calc(100vh - 190px);
+    overflow-y: auto;
+}
+.custom-pink {
+    color: #ff005a;
+}
+.custom-pink:hover {
+    color: #e23b3b;
+}
+#setAppointmentModal .custom-select {
+    width: 78px;
+    padding: .375rem 0 .375rem .75rem;
+    border-bottom: 1px solid #e7e7e7;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+#year {
+    width:95px !important;
+}
+.mail-header {
+    background-color: #f6f6f6;
+    padding: .75rem;
+    text-align: center;
+    border: 1px solid #f6f6f6;
+    border-bottom-color: transparent;
+}
+.mail-box .input-group-prepend .input-group-text {
+    border-color: #f6f6f6;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    color: #1CACF6;
+    background-color: #fff;
+    width: 90px;
+    font-size: 16px;
+}
+.mail-box .input-group input.form-control {
+    border-color: #f6f6f6;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    font-size: 16px;
+}
+.mail-box .input-group textarea.form-control, #messages .input-group textarea.form-control {
+    border-color: #f6f6f6;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    font-size: 16px;
+}
+.mail-buttons {
+    overflow:hidden;
+    padding: 20px;
+    border: 1px solid #f6f6f6;
+    border-top-color: transparent;
+    margin-bottom: 20px;
+}
+.mail-box .btn-link:hover, .mail-box .btn-link {
+    color: #1CACF6;
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff;
+}
+.edit-supervisee {
+
+}
+.edit-supervisee .input-group-prepend .input-group-text {
+    width: 200px;
+    border-left-color: transparent;
+}
+.edit-supervisee .input-group input.form-control {
+    border-right-color: transparent;
+}
+#setAppointmentModal textarea, #blockModal textarea {
+    border-color: #f6f6f6;
+    font-size: 16px;
+}
+.inbox tbody tr:last-child th, .inbox tbody tr:last-child td {
+    border-bottom: 1px solid #f6f6f6;
+}
+#navbar-collapse {
+    background-color: #334352;
+    left: -16px;
+    min-width: 255px;
+    box-shadow: 8px 0 4px -3px #b5b5b5;
+}
+#navbar-collapse .dropdown-item.active {
+    background-color: #F6F6F6;
+    color: #334352;
+}
+#navbar-collapse a {
+    color: #F6F6F6;
+    font-weight: bold;
+    padding: 19px 23px;
+}
+#navbar-collapse .dropdown-item:hover {
+    color: #334352;
+}
+.dropdown-menu {
+    border-radius: 0;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    top: 48px;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(255, 255, 255, 0.8);
+    z-index: 9999999;
+}
+.loaderGif {
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 120px);
+    width: 100%;
+    font-size: 30px;
+    display: block !important;
+}
+.container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: initial;
+}

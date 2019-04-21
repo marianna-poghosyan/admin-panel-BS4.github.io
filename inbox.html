@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Design Inbox">
+    <meta name="keywords" content="Inbox">
+    <title>Inbox</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <!--<img src="" alt="Logo1">-->
+                        Logo1
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a class="nav-link">
+                        <!--<img src="" alt="Logo2">-->
+                        Logo2
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link menu-button" href="#"><img src="icon/expand menu icon.png" alt="Menu icon"></a>
+                    <div class="dropdown-menu" id="navbar-collapse">
+                        <a class="dropdown-item active" href="#">Inbox</a>
+                        <a class="dropdown-item" href="mySupervisee.html">My Supervisee</a>
+                        <a class="dropdown-item" href="allSupervisee.html">All Supervisee</a>
+                        <a class="dropdown-item" href="broadcast.html">Broadcast</a>
+                        <a class="dropdown-item" href="index.html">Administration</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">Inbox</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <ul class="nav nav-tabs border-0" role="tablist" style="padding-right: 8px;">
+            <li class="nav-item">
+                <a class="nav-link rounded-0 active" data-toggle="tab" href="#messages">
+                    <img src="icon/msg%20icon%20dark.png" class="darkIcon" alt="messages">
+                    <img src="icon/msg%20icon%20light.png" class="lightIcon" alt="messages">
+                    Messages
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" data-toggle="tab" href="#submission">
+                    <img src="icon/submission%20dark.png" class="darkIcon" alt="submission">
+                    <img src="icon/submission%20light.png" class="lightIcon" alt="submission">
+                    Submissions
+                </a>
+            </li>
+            <li class="ml-auto">
+                <div class="input-group rounded search-group">
+                    <input type="text" class="form-control border-0" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-link border-0" type="button">
+                            <img src="icon/search icon.png" alt="search">
+                        </button>
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="messages" class="tab-pane active"><br>
+                <h4>
+                    <span>Inbox</span>
+                </h4><br>
+                <table class="table text-center inbox">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">
+                                <img src="icon/priority%20icon.png" alt="priority">
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">Sender</th>
+                            <th scope="col">
+                                Supervisee<br>
+                                NRIC
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">Supervisee Name</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">
+                                Date
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><img src="icon/medium%20priority%20icon.png" alt="medium"></td>
+                            <td>Alpha Centre</td>
+                            <td>1234567D</td>
+                            <td>TAN AH KUAN GEORGE</td>
+                            <td><u>Tan Ah Kuan George was absent for this appointment</u></td>
+                            <td>20/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><img src="icon/medium%20priority%20icon.png" alt="medium"></td>
+                            <td>Alpha Centre</td>
+                            <td>1222564R</td>
+                            <td>LEE MEI SIAN ALICE</td>
+                            <td><u>Lee Mei Sien Alice was absent for her appointment</u></td>
+                            <td>20/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><img src="icon/low%20priority%20icon.png" alt="low"></td>
+                            <td>Alpha Centre</td>
+                            <td>1234525Z</td>
+                            <td>AWANG BIN BINTANG</td>
+                            <td><u>Awang Bin Bintang was absent for his appointment</u></td>
+                            <td>18/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td><img src="icon/high%20priority%20icon.png" alt="high"></td>
+                            <td>Alpha Centre</td>
+                            <td>5364567F</td>
+                            <td>CHAN CHEE HAN STEPHEN</td>
+                            <td><u>Chan Chee Han Stephen has made a submission</u></td>
+                            <td>15/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td><img src="icon/low%20priority%20icon.png" alt="low"></td>
+                            <td>Alpha Centre</td>
+                            <td>643451G</td>
+                            <td>OH TEO LIA</td>
+                            <td><u>Oh Teo Lia made 3 changes for time slot</u></td>
+                            <td>14/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td><img src="icon/low%20priority%20icon.png" alt="low"></td>
+                            <td>Alpha Centre</td>
+                            <td>0912567N</td>
+                            <td>BARRY CHRISTOPHER LEE</td>
+                            <td><u>Barry Christopher Lee was absent for his appointment</u></td>
+                            <td>10/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td><img src="icon/high%20priority%20icon.png" alt="high"></td>
+                            <td>Alpha Centre</td>
+                            <td>8567532H</td>
+                            <td>WU SHENG MOK</td>
+                            <td><u>Wu Sheng Mok has made a submission</u></td>
+                            <td>09/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td><img src="icon/low%20priority%20icon.png" alt="low"></td>
+                            <td>Alpha Centre</td>
+                            <td>1233632K</td>
+                            <td>LEOW TEN MIN</td>
+                            <td><u>Leow Ten Min has made a submission</u></td>
+                            <td>09/01/18</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <div class="mail-box">
+                    <div class="input-group input-group-lg" style="border-top: 1px solid #f6f6f6;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">To:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Poh Mah Toh <phomahtoh@gmail.com>">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">From:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Alpha Centre <alphacentre@cnb.gov.sg>">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">Title:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Tan Ah Guan George was absent for this appointment">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <textarea class="form-control rounded-0" rows="8" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Sit democritum omittantur eu. Prompta nominati definitionem his ne. An mel tation nostrum mediocrem, mel cu harum sanctus, sed id partiendo rationibus disputando. Eos latine salutatus eu, mea ne deserunt sapientem eloquentiam. Errem adversarium id has, ferri quodsi labitur vis id. Eu vis populo commodo, erat inimicus erroribus ad qui. Wisi error eloquentiam mel ei. Ad cum fugit atqui insolens, posse quidam ei qui, in eum falli tation scripserit. Mei at alii integre. Cibo nulla iisque vim ut. Oratio laudem cum no, mea an gloriatur interesset. Mel iracundia instructior et, id saperet comprehensam pri. Quod eius persecuti eam eu. Quo exerci nullam cu, has omnesque inciderint definitiones an, id ludus congue pro. Delenit qualisque liberavisse in vim, principes efficiendi duo id.</textarea>
+                    </div>
+                    <div class="mail-buttons">
+                        <span class="btn-link pointer font-weight-bold">Click hera to reassign appointment</span>
+                    </div>
+                </div>
+            </div>
+            <div id="submission" class="tab-pane"><br>
+                <h4>
+                    <span>Submissions</span>
+                </h4><br>
+                <table class="table text-center inbox">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">
+                                Supervisee<br>
+                                NRIC
+                            </th>
+                            <th scope="col">Supervisee Name</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">
+                                Date
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>1234567D</td>
+                            <td>TAN AH KUAN GEORGE</td>
+                            <td>Tan Ah Kuan George was absent for this appointment</td>
+                            <td>20/01/18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>1222564R</td>
+                            <td>LEE MEI SIAN ALICE</td>
+                            <td>Lee Mei Sien Alice was absent for her appointment</td>
+                            <td>20/01/18</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <div class="mail-box">
+                    <div class="input-group input-group-lg" style="border-top: 1px solid #f6f6f6;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">To:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Poh Mah Toh <phomahtoh@gmail.com>">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">From:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Alpha Centre <alphacentre@cnb.gov.sg>">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">Title:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Tan Ah Guan George was absent for this appointment">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <textarea class="form-control rounded-0" rows="8" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Sit democritum omittantur eu. Prompta nominati definitionem his ne. An mel tation nostrum mediocrem, mel cu harum sanctus, sed id partiendo rationibus disputando. Eos latine salutatus eu, mea ne deserunt sapientem eloquentiam. Errem adversarium id has, ferri quodsi labitur vis id. Eu vis populo commodo, erat inimicus erroribus ad qui. Wisi error eloquentiam mel ei. Ad cum fugit atqui insolens, posse quidam ei qui, in eum falli tation scripserit. Mei at alii integre. Cibo nulla iisque vim ut. Oratio laudem cum no, mea an gloriatur interesset. Mel iracundia instructior et, id saperet comprehensam pri. Quod eius persecuti eam eu. Quo exerci nullam cu, has omnesque inciderint definitiones an, id ludus congue pro. Delenit qualisque liberavisse in vim, principes efficiendi duo id.</textarea>
+                    </div>
+                    <div class="mail-buttons">
+                        <span class="btn-link pointer font-weight-bold">Click hera to view the attached document</span>
+                        <div>
+                            <button class="btn btn-custom-blue float-right" data-toggle="modal" data-target="#approveModal">APPROVE</button>
+                            <button class="btn btn-link float-right px-4">REJECT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="approveModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title text-center">Document has been approved and message has been sent to supervisee</h5><br>
+                    <button class="btn btn-custom-blue btn-block" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="loaderGif">
+            <img src="icon/loading_spinner.gif" >
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper-1.12.9.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

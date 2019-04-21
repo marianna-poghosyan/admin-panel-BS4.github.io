@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Design My Supervisee">
+    <meta name="keywords" content="My Supervisee">
+    <title>My Supervisee</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <!--<img src="" alt="Logo1">-->
+                        Logo1
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a class="nav-link">
+                        <!--<img src="" alt="Logo2">-->
+                        Logo2
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link menu-button" href="#"><img src="icon/expand menu icon.png" alt="Menu icon"></a>
+                    <div class="dropdown-menu" id="navbar-collapse">
+                        <a class="dropdown-item" href="inbox.html">Inbox</a>
+                        <a class="dropdown-item active" href="#">My Supervisee</a>
+                        <a class="dropdown-item" href="allSupervisee.html">All Supervisee</a>
+                        <a class="dropdown-item" href="broadcast.html">Broadcast</a>
+                        <a class="dropdown-item" href="index.html">Administration</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">My Supervisee</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <ul class="nav nav-tabs border-0" role="tablist" style="padding-right: 8px;">
+            <li class="nav-item">
+                <a class="nav-link rounded-0 active" data-toggle="tab" href="#information">
+                    <img src="icon/info%20icon%20dark.png" class="darkIcon" alt="information">
+                    <img src="icon/info%20icon%20light.png" class="lightIcon" alt="information">
+                    Information
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" data-toggle="tab" href="#result">
+                    <img src="icon/results%20icon%20dark.png" class="darkIcon" alt="result">
+                    <img src="icon/results%20icon%20light.png" class="lightIcon" alt="result">
+                    Results
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" data-toggle="tab" href="#appointment">
+                    <img src="icon/appointments%20dark.png" class="darkIcon" alt="appointment">
+                    <img src="icon/appointments%20light.png" class="lightIcon" alt="appointment">
+                    Appointments
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" data-toggle="tab" href="#block">
+                    <img src="icon/block%20dark.png" class="darkIcon" alt="block">
+                    <img src="icon/block%20light.png" class="lightIcon" alt="block">
+                    Block/Unblock
+                </a>
+            </li>
+            <li class="ml-auto">
+                <div class="input-group rounded search-group">
+                    <input type="text" class="form-control border-0" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-link border-0" type="button">
+                            <img src="icon/search icon.png" alt="search">
+                        </button>
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="information" class="tab-pane active"><br>
+                <h4>
+                    <span>Information</span>
+                </h4><br>
+                <table class="table text-center information">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">
+                                Supervisee<br>
+                                NRIC
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">Supervisee Name</th>
+                            <th scope="col">Case Officer</th>
+                            <th scope="col">
+                                Frequency
+                                <div class="small-custom">(no. of items a week)</div>
+                            </th>
+                            <th>Reporting Centre</th>
+                            <th>Contact No.</th>
+                            <th scope="col">
+                                Status
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>1234567D</td>
+                            <td>TAN AH KUAN GEORGE</td>
+                            <td>TIFFANY TEO BING BING</td>
+                            <td>1</td>
+                            <td>Alpha Centre</td>
+                            <td>91234567</td>
+                            <td>Blocked</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#editSuperviseeModal">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>1222564R</td>
+                            <td>LEE MEI SIAN ALICE</td>
+                            <td>LIM TONG HAI</td>
+                            <td>2</td>
+                            <td>Alpha Centre</td>
+                            <td>81723645</td>
+                            <td>Enrolled</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#editSuperviseeModal">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>1234525Z</td>
+                            <td>AWANG BIN BINTANG</td>
+                            <td>LIM TONG HAI</td>
+                            <td>2</td>
+                            <td>Alpha Centre</td>
+                            <td>92037445</td>
+                            <td>Enrolled</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#editSuperviseeModal">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>5364567F</td>
+                            <td>CHAN CHEE HAN STEPHEN</td>
+                            <td>GOH SOH PEI</td>
+                            <td>3</td>
+                            <td>Alpha Centre</td>
+                            <td>90234237</td>
+                            <td>New</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#editSuperviseeModal">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>643451G</td>
+                            <td>OH TEO LIA</td>
+                            <td>LIM TONG HAI</td>
+                            <td>3</td>
+                            <td>Alpha Centre</td>
+                            <td>81237452</td>
+                            <td>New</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#editSuperviseeModal">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="result" class="tab-pane"><br>
+                <h4>
+                    <span>Results</span>
+                </h4><br>
+                <table class="table table-bordered text-center result">
+                    <thead>
+                        <tr>
+                            <td rowspan="2" scope="col">
+                                Supervisee<br>
+                                NRIC
+                                <img src="icon/sort icon.png" alt="sort">
+                            </td>
+                            <td rowspan="2" scope="col">Supervisee Name</td>
+                            <td colspan="4" scope="col">IUT</td>
+                            <td colspan="15" scope="col">HSA</td>
+                        </tr>
+                        <tr>
+                            <td>AMPH</td>
+                            <td>BENZ</td>
+                            <td>OPI</td>
+                            <td>THC</td>
+                            <td>AMPH</td>
+                            <td>BENZ</td>
+                            <td>OPI</td>
+                            <td>THC</td>
+                            <td>COCA</td>
+                            <td>BARB</td>
+                            <td>LSD</td>
+                            <td>METH</td>
+                            <td>MTQL</td>
+                            <td>PCP</td>
+                            <td>KET</td>
+                            <td>BUPRE</td>
+                            <td>CAT</td>
+                            <td>PPZ</td>
+                            <td>NPZ</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234567D</td>
+                            <td>TAN AH KUAN GEORGE</td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                        </tr>
+                        <tr>
+                            <td>1222564R</td>
+                            <td>LEE MEI SIAN ALICE</td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                        </tr>
+                        <tr>
+                            <td>1234525Z</td>
+                            <td>AWANG BIN BINTANG</td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td colspan="15">Not Available</td>
+                        </tr>
+                        <tr>
+                            <td>5364567F</td>
+                            <td>CHAN CHEE HAN STEPHEN</td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                        </tr>
+                        <tr>
+                            <td>6434517G</td>
+                            <td>OH TEO LIA</td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                            <td><img src="icon/red%20circle.png" alt="yes"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="appointment" class="tab-pane fade"><br>
+                <h4>
+                    <span>Appointments</span>
+                </h4><br>
+                <table class="table text-center appointment">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                Supervisee NRIC
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">Supervisee Name</th>
+                            <th scope="col">
+                                Appointment
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">
+                                Status
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">
+                                Next Date
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234567D</td>
+                            <td>TAN AH KUAN GEORGE</td>
+                            <td>02/01/18</td>
+                            <td class="custom-pink">Missed</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#setAppointmentModal">
+                                    Click to set
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1222564R</td>
+                            <td>LEE MEI SIAN ALICE</td>
+                            <td>03/01/18</td>
+                            <td class="custom-pink">Missed</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#setAppointmentModal">
+                                    Click to set
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1234525Z</td>
+                            <td>AWANG BIN BINTANG</td>
+                            <td>23/01/18</td>
+                            <td>Booked</td>
+                            <td>23/01/18</td>
+                        </tr>
+                        <tr>
+                            <td>5364567F</td>
+                            <td>CHAN CHEE HAN STEPHEN</td>
+                            <td>22/01/18</td>
+                            <td>Booked</td>
+                            <td>22/01/18</td>
+                        </tr>
+                        <tr>
+                            <td>6434517G</td>
+                            <td>OH TEO LIA</td>
+                            <td>18/01/18</td>
+                            <td>Pending</td>
+                            <td>18/01/18</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="block" class="tab-pane fade"><br>
+                <h4>
+                    <span>Block/Unblock</span>
+                </h4><br>
+                <table class="table text-center block">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                Supervisee NRIC
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">Supervisee Name</th>
+                            <th scope="col">
+                                Status
+                                <img src="icon/sort icon.png" alt="sort">
+                            </th>
+                            <th scope="col">Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234567D</td>
+                            <td>TAN AH KUAN GEORGE</td>
+                            <td>
+                                <button type="button" class="btn btn-link custom-pink" data-toggle="modal" data-target="#blockModal">
+                                    Blocked
+                                </button>
+                            </td>
+                            <td>Case Officer blocked</td>
+                        </tr>
+                        <tr>
+                            <td>1222564R</td>
+                            <td>LEE MEI SIAN ALICE</td>
+                            <td>
+                                <button type="button" class="btn btn-link custom-pink" data-toggle="modal" data-target="#blockModal">
+                                    Blocked
+                                </button>
+                            </td>
+                            <td>Missed 3 appointments</td>
+                        </tr>
+                        <tr>
+                            <td>1234525Z</td>
+                            <td>AWANG BIN BINTANG</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#blockModal">
+                                    Ok
+                                </button>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5364567F</td>
+                            <td>CHAN CHEE HAN STEPHEN</td>
+                            <td>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#blockModal">
+                                    Ok
+                                </button>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="editSuperviseeModal" tabindex="-1" role="dialog" aria-labelledby="editSuperviseeModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="editSuperviseeModalTitle">View / Edit Supervisee Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="icon/cancel icon.png" alt="cancel">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mail-box edit-supervisee">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Next-of-kin NRIC No.</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Next-of-kin Name</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Chew Bee Hong Beatrice">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Next-of-kin Date of Birth</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="02/12/1958">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Next-of-kin Relation</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Mother">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Next-of-kin Contact No.</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="9837 4234">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Next-of-kin Address</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Employer Name</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Ang Kai Kiat">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Employer Contact No.</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="8192 3433">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Employer Address</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Case Officer</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Poh Lay Hong">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Case Officer Contact No.</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="9123 1242">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block modal-submit">UPDATE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="setAppointmentModal" tabindex="-1" role="dialog" aria-labelledby="setAppointmentModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="setAppointmentModalTitle">Set Appointment Date</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="icon/cancel icon.png" alt="cancel">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span class="note">Date</span>
+                    <select class="custom-select rounded-0" id="date">
+                        <option value="" selected disabled>DD</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+                    </select>
+                    <select class="custom-select rounded-0" id="month">
+                        <option value="" selected disabled>MM</option><option value="0">01</option><option value="1">02</option><option value="2">03</option><option value="3">04</option><option value="4">05</option><option value="5">06</option><option value="6">07</option><option value="7">08</option><option value="8">09</option><option value="9">10</option><option value="10">11</option><option value="11">12</option>
+                    </select>
+                    <select class="custom-select rounded-0" id="year">
+                        <option value="" selected disabled>YYYY</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option>
+                    </select>
+                    <div class="note">Message to Supervisee</div><br>
+                    <div class="input-group input-group-lg">
+                        <textarea class="form-control rounded-0" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block modal-submit">SET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="blockModal" tabindex="-1" role="dialog" aria-labelledby="blockModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="blockModalTitle">Unblock Supervisee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="icon/cancel icon.png" alt="cancel">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="note">Notes</div><br>
+                    <textarea class="form-control rounded-0" rows="5"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <div style="min-width: 5px; margin: 0 auto;">
+                        <button class="btn btn-link px-4" data-dismiss="modal">CANCEL</button>
+                        <button class="btn btn-custom-blue">UNBLOCK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="loaderGif">
+            <img src="icon/loading_spinner.gif" >
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper-1.12.9.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

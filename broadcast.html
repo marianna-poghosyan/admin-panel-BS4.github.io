@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Design Broadcast">
+    <meta name="keywords" content="Broadcast">
+    <title>Broadcast</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <!--<img src="" alt="Logo1">-->
+                        Logo1
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a class="nav-link">
+                        <!--<img src="" alt="Logo2">-->
+                        Logo2
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link menu-button" href="#"><img src="icon/expand menu icon.png" alt="Menu icon"></a>
+                    <div class="dropdown-menu" id="navbar-collapse">
+                        <a class="dropdown-item" href="inbox.html">Inbox</a>
+                        <a class="dropdown-item" href="mySupervisee.html">My Supervisee</a>
+                        <a class="dropdown-item" href="allSupervisee.html">All Supervisee</a>
+                        <a class="dropdown-item active" href="#">Broadcast</a>
+                        <a class="dropdown-item" href="index.html">Administration</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">Broadcast</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <ul class="nav nav-tabs border-0" role="tablist" style="padding-right: 8px;">
+            <li class="nav-item">
+                <a class="nav-link rounded-0 active" data-toggle="tab" href="#newMessage">
+                    <img src="icon/msg icon dark.png" class="darkIcon" alt="Pencil">
+                    <img src="icon/msg icon light.png" class="lightIcon" alt="Pencil">
+                    New Message
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" data-toggle="tab" href="#sentMessages">
+                    <img src="icon/sent icon dark.png" class="darkIcon" alt="Pencil">
+                    <img src="icon/sent icon light.png" class="lightIcon" alt="Pencil">
+                    Sent Messages
+                </a>
+            </li>
+            <li class="ml-auto">
+                <div class="input-group rounded search-group">
+                    <input type="text" class="form-control border-0" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-link border-0" type="button">
+                            <img src="icon/search icon.png" alt="search">
+                        </button>
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="newMessage" class="tab-pane active"><br>
+                <h4>
+                    <span>New Message</span>
+                </h4><br>
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Supervisee NRIC</th>
+                            <th scope="col">Supervisee Name</th>
+                            <th scope="col">Last Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="checkbox">
+                                <img src="icon/not%20selected%20icon.png" class="not-checked" alt="checkbox">
+                                <img src="icon/selected%20icon.png" class="checked" alt="checkbox">
+                            </th>
+                            <td>1234567D</td>
+                            <td>TAN AH KUAN GEORGE</td>
+                            <td>1234567D</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="checkbox">
+                                <img src="icon/not%20selected%20icon.png" class="not-checked" alt="checkbox">
+                                <img src="icon/selected%20icon.png" class="checked" alt="checkbox">
+                            </th>
+                            <td>1222564R</td>
+                            <td>LEE MEI SIAN ALICE</td>
+                            <td>1222564R</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="checkbox">
+                                <img src="icon/not%20selected%20icon.png" class="not-checked" alt="checkbox">
+                                <img src="icon/selected%20icon.png" class="checked" alt="checkbox">
+                            </th>
+                            <td>1234525Z</td>
+                            <td>AWANG BIN BINTANG</td>
+                            <td>1234525Z</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <div class="overflow-hidden">
+                    <button class="btn btn-custom-blue float-right">ADD ALL SUPERVISEE</button>
+                </div><br>
+                <div class="mail-box">
+                    <div class="mail-header">
+                        <span class="font-weight-bold">Compose Message</span>
+                        <div class="d-inline-block position-relative">
+                            <span class="custom-drop-menu d-inline-block rounded-top pointer">
+                                <img src="icon/drop%20down%20icon.png" alt="drop down">
+                            </span>
+                            <div class="dropdown-custom d-none rounded-bottom rounded-right">
+                                <div class="checkbox">
+                                    <img src="icon/not%20selected%20icon.png" class="not-checked" alt="checkbox">
+                                    <img src="icon/selected%20icon.png" class="checked" alt="checkbox">
+                                    <span>SMS</span>
+                                </div>
+                                <div class="checkbox">
+                                    <img src="icon/not%20selected%20icon.png" class="not-checked" alt="checkbox">
+                                    <img src="icon/selected%20icon.png" class="checked" alt="checkbox">
+                                    <span>Email</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">To:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Lee Mei Sian Alice <9123 1212>; Awang Bin Bintang <9128 1293>">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">From:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Lim Tong Hai <9123 4567>">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0">Title:</span>
+                        </div>
+                        <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="Why were you absent again?">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <textarea class="form-control rounded-0" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                    </div>
+                    <div class="mail-buttons">
+                        <button class="btn btn-custom-blue float-right">SEND</button>
+                        <button class="btn btn-link float-right px-4">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sentMessages" class="tab-pane fade"><br>
+                <div id="supervisees">
+                    <h4>
+                        <span>Suprevisee</span>
+                    </h4><br>
+                    <table class="table text-center supervisees">
+                        <thead>
+                            <tr>
+                                <th scope="col">Supervisee NRIC</th>
+                                <th scope="col">Supervisee Name</th>
+                                <th scope="col">Last Message</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234567D</td>
+                                <td>TAN AH KUAN GEORGE</td>
+                                <td>20/01/18</td>
+                                <td>
+                                    <button type="button" class="btn btn-link toggleTables">
+                                        View Messages
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1222564R</td>
+                                <td>LEE MEI SIAN ALICE</td>
+                                <td>N/A</td>
+                                <td>
+                                    <button type="button" class="btn btn-link toggleTables">
+                                        View Messages
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1234525Z</td>
+                                <td>AWANG BIN BINTANG</td>
+                                <td>18/01/18</td>
+                                <td>
+                                    <button type="button" class="btn btn-link toggleTables">
+                                        View Messages
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1912742B</td>
+                                <td>LEE SI NING PATRICIA</td>
+                                <td>17/01/18</td>
+                                <td>
+                                    <button type="button" class="btn btn-link toggleTables">
+                                        View Messages
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1293823E</td>
+                                <td>AJAY BABU</td>
+                                <td>N/A</td>
+                                <td>
+                                    <button type="button" class="btn btn-link toggleTables">
+                                        View Messages
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0124932F</td>
+                                <td>MUZAKIR SAYID</td>
+                                <td>N/A</td>
+                                <td>
+                                    <button type="button" class="btn btn-link toggleTables">
+                                        View Messages
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="messages" class="d-none">
+                    <h4>
+                        <span>Sent Messages</span>
+                    </h4><br>
+                    <div class="overflow-hidden">
+                        <span class="btn-link pointer toggleTables">< Back to Supervisee List</span>
+                    </div><br>
+                    <table class="table text-center messages">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Message Title</th>
+                                <th scope="col">SMS</th>
+                                <th scope="col">Email</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>30/01/18</td>
+                                <td>Submit your MC</td>
+                                <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                                <td><img src="icon/red%20circle.png" alt="yes"></td>
+                                <td>
+                                    <button type="button" class="btn btn-link view-messages" data-toggle="modal" data-target="#messageModal">
+                                        View Message
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>30/01/18</td>
+                                <td>Why were you absent again?</td>
+                                <td><img src="icon/red%20circle.png" alt="yes"></td>
+                                <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                                <td>
+                                    <button type="button" class="btn btn-link view-messages" data-toggle="modal" data-target="#messageModal">
+                                        View Message
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>28/01/18</td>
+                                <td>Reminder to report</td>
+                                <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                                <td><img src="icon/red%20circle.png" alt="yes"></td>
+                                <td>
+                                    <button type="button" class="btn btn-link view-messages" data-toggle="modal" data-target="#messageModal">
+                                        View Message
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>27/01/18</td>
+                                <td>Submit your MC</td>
+                                <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                                <td><img src="icon/red%20circle.png" alt="yes"></td>
+                                <td>
+                                    <button type="button" class="btn btn-link view-messages" data-toggle="modal" data-target="#messageModal">
+                                        View Message
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26/01/18</td>
+                                <td>Reminder to report</td>
+                                <td><img src="icon/red%20circle.png" alt="yes"></td>
+                                <td><img src="icon/grey%20circle%20icon.png" alt="no"></td>
+                                <td>
+                                    <button type="button" class="btn btn-link view-messages" data-toggle="modal" data-target="#messageModal">
+                                        View Message
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="messageModalTitle">View Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="icon/cancel icon.png" alt="cancel">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mail-box">
+                        <div class="input-group input-group-lg" style="border-top: 1px solid #f6f6f6;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">To:</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" readonly value="Lee Mei Sian Alice <9123 1212>; Awang Bin Bintang <9128 1293>">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">From:</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" readonly value="Lim Tong Hai <9123 4567>">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0">Title:</span>
+                            </div>
+                            <input type="text" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" readonly value="Why were you absent again?">
+                        </div>
+                        <div class="input-group input-group-lg" style="border-bottom: 1px solid #f6f6f6;">
+                            <textarea class="form-control rounded-0" rows="5" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="loaderGif">
+            <img src="icon/loading_spinner.gif" >
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper-1.12.9.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
